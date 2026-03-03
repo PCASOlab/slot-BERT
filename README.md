@@ -6,7 +6,7 @@ Official implementation of:
 Guiqiu Liao, Matjaz Jogan, Marcel Hussing, Kenta Nakahashi,  
 Kazuhiro Yasufuku, Amin Madani, Eric Eaton, Daniel A. Hashimoto  
 
-Paper: https://arxiv.org/abs/2501.12477  
+Paper: https://doi.org/10.1016/j.media.2026.103972
 Code: https://github.com/PCASOlab/slot-BERT  
 
 ---

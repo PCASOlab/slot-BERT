@@ -45,5 +45,5 @@ Support these 3 dataset, the demo is able to train with sampled data (within fol
 - **Cholec dataset:** [Download](https://upenn.box.com/s/ree79lv9fbibjbs2b8mkwzz207oqu6jj)
 
 ### Coming soon
-Useful prompts to easily navigate the code through LLM programming agent.
+Useful prompts to easily navigate the code through LLM programming agents.
 

@@ -47,3 +47,23 @@ Support these 3 dataset, the demo is able to train with sampled data (within fol
 ### Coming soon
 Useful prompts to easily navigate the code through LLM programming agents.
 
+
+## Public Release Scope
+
+This release entrypoint focuses on **Slot-BERT** training with the **contrastive slot loss** only.
+
+- Use `main.py` at the repository root as the starting script.
+- The script reuses internals from `0_full_code_back/` but exposes a narrowed training path for release.
+
+### Run
+
+```bash
+python main.py
+```
+
+Optional arguments:
+
+```bash
+python main.py --mode train_cholec --contrastive-temp 1.0 --sim-threshold 0.9
+```
+

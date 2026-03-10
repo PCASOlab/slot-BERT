@@ -8,7 +8,7 @@ Kazuhiro Yasufuku, Amin Madani, Eric Eaton, Daniel A. Hashimoto
 
 Journal paper (MedIA): https://doi.org/10.1016/j.media.2026.103972
 
-We also release code for our alternative approach [Xslot](https://github.com/PCASOlab/Xslot).
+We also released code for our alternative approach [Xslot](https://github.com/PCASOlab/Xslot).
 
 ---
 

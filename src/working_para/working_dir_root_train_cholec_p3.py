@@ -17,7 +17,8 @@ working_root = "C:/2data/"
 if Linux_computer == True:
     working_root = "/home/guiqiu/GQ_project/weakly_supervised/Data/"
 
-working_pcaso_raid = "Data_samples/"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+working_pcaso_raid = os.path.join(BASE_DIR, "Data_samples") + os.sep
  
 
 

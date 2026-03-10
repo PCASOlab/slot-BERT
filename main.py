@@ -49,11 +49,18 @@ def main() -> None:
 
     os.environ["WORKING_DIR_IMPORT_MODE"] = args.mode
 
+    repo_root = pathlib.Path(__file__).resolve().parent
     code_root = pathlib.Path(args.code_root).resolve()
     if not code_root.exists():
         raise FileNotFoundError(f"code root not found: {code_root}")
 
-    sys.path.insert(0, str(code_root))
+    # Keep import behavior predictable no matter where `python main.py` is launched.
+    # If a public `src/` layout is present, prioritize it so local package imports work.
+    src_root = repo_root / "src"
+    import_roots = [repo_root, src_root, code_root]
+    for root in reversed(import_roots):
+        if root.exists() and str(root) not in sys.path:
+            sys.path.insert(0, str(root))
 
     from dataset.dataset import myDataloader
     from dataset import io

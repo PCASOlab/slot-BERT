@@ -30,7 +30,8 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument(
         "--code-root",
-        default="0_full_code_back",
+        # default="0_full_code_back",
+        default="src",
         help="Internal code root used by this release entrypoint",
     )
     parser.add_argument(

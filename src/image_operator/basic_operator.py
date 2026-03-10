@@ -12,10 +12,10 @@ import numpy as np
 # from skimage.segmentation import (morphological_geodesic_active_contour,
 #                                   inverse_gaussian_gradient)
 # from utils import *
-import pydensecrf.densecrf as dcrf
+# import pydensecrf.densecrf as dcrf
 from skimage.transform import resize
 
-from pydensecrf.utils import unary_from_softmax
+# from pydensecrf.utils import unary_from_softmax
 
 def half_crop(video ):
     resize_to_original =  choice([True, True])

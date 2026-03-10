@@ -5,7 +5,7 @@ from sklearn.metrics import adjusted_rand_score
 import cv2
 import os
 from visdom import Visdom
-from display import stack_to_color_mask
+# from display import stack_to_color_mask
 
 if Visdom_flag:
   viz = Visdom(port=8097)

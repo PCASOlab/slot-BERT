@@ -49,10 +49,7 @@ Support these 3 dataset, the demo is able to train with sampled data (within fol
 - **Abdominal dataset:** [Download](https://upenn.box.com/s/493licnenrssjukuvok5zkvc5cqmx1nh)
 - **Thoracic dataset:** [Please fill in this data request form](https://upenn.co1.qualtrics.com/jfe/form/SV_ewBhqo82j65YXtQ)
 - **Cholec dataset:** [Download](https://upenn.box.com/s/ree79lv9fbibjbs2b8mkwzz207oqu6jj)
-
-### Coming soon
-Useful prompts to easily navigate the code through LLM programming agents.
-
+ 
 
 ## Public Release Scope
 
@@ -76,6 +73,8 @@ python main.py --mode train_cholec --contrastive-temp 1.0 --sim-threshold 0.9
 
 ### Coming soon
 Pretrained weights on different datasets.
+
+Useful prompts to easily navigate the code through LLM programming agents.
 
 ## Citation
 

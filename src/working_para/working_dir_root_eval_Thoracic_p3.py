@@ -129,7 +129,7 @@ Evaluation_slots = True
 img_size = 128
 GPU_mode= True
 
-Continue_flag = True
+Continue_flag = False
 Test_on_cholec_seg8k= False
 
 Visdom_flag = True

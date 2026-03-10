@@ -15,7 +15,9 @@ import time
 
 import numpy as np
 import torch
-
+print(torch.__version__)
+print(torch.cuda.is_available())
+print(torch.version.cuda)
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train/evaluate Slot-BERT")

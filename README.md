@@ -6,14 +6,16 @@ Official implementation of:
 Guiqiu Liao, Matjaz Jogan, Marcel Hussing, Kenta Nakahashi,  
 Kazuhiro Yasufuku, Amin Madani, Eric Eaton, Daniel A. Hashimoto  
 
-Paper: https://doi.org/10.1016/j.media.2026.103972
-Code: https://github.com/PCASOlab/slot-BERT  
+Journal paper (MedIA): https://doi.org/10.1016/j.media.2026.103972
+
+We also release code for our alternative approach [Xslot](https://github.com/PCASOlab/Xslot).
 
 ---
 
 ## Overview
 
-Slot-BERT is a self-supervised object-centric representation learning framework for surgical video.
+Slot-BERT is a self-supervised object-centric representation learning framework for surgical video. 
+ 
 
 Unlike conventional recurrent slot-based video models, Slot-BERT introduces:
 
@@ -24,6 +26,10 @@ Unlike conventional recurrent slot-based video models, Slot-BERT introduces:
 - Efficient latent-space reasoning without optical flow or depth cues
 
 The model achieves strong unsupervised segmentation, transfer learning, and zero-shot generalization across multiple surgical datasets.
+
+<p align="center">
+  <img src="src/asset/TST_c.jpg" width="800" />
+</p>
 
 ---
 
@@ -67,3 +73,25 @@ Optional arguments:
 python main.py --mode train_cholec --contrastive-temp 1.0 --sim-threshold 0.9
 ```
 
+
+### Coming soon
+Pretrained weights on different datasets.
+
+## Citation
+
+If you use this codebase, please cite:
+
+```
+@article{liao2026slot,
+  title={Slot-BERT: self-supervised object discovery in surgical video},
+  author={Liao, Guiqiu and Jogan, Matja{\v{z}} and Hussing, Marcel and Nakahashi, Kenta and Yasufuku, Kazuhiro and Madani, Amin and Hashimoto, Daniel A and others},
+  journal={Medical Image Analysis},
+  pages={103972},
+  year={2026},
+  publisher={Elsevier}
+}
+```
+
+## License
+
+This project is for academic research purposes only.

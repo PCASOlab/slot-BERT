@@ -67,7 +67,7 @@ python main.py
 Optional arguments:
 
 ```bash
-python main.py --mode train_cholec --contrastive-temp 1.0 --sim-threshold 0.9
+python main.py --mode train_miccai --contrastive-temp 1.0 
 ```
 
 

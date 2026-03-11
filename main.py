@@ -42,8 +42,8 @@ def parse_args() -> argparse.Namespace:
         help="Value for WORKING_DIR_IMPORT_MODE (e.g., train_miccai/train_cholec)",
     )
     parser.add_argument("--contrastive-temp", type=float, default=1.0)
-    parser.add_argument("--sim-threshold", type=float, default=0.90)
-    parser.add_argument("--slot-ini", default="binder+merger")
+    parser.add_argument("--sim-threshold", type=float, default=1.0)  # lower to enable Xslot
+    parser.add_argument("--slot-ini", default="rnn")
     return parser.parse_args()
 
 
@@ -107,7 +107,7 @@ def main() -> None:
         num_gpus,
         Using_contrast=True,
         Using_SP_regu=False,
-        Using_SP=True,
+        Using_SP=False,
         Using_slot_bert=True,
         slot_ini=args.slot_ini,
         Sim_threshold=args.sim_threshold,
